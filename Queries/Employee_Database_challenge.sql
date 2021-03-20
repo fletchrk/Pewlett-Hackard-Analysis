@@ -1,11 +1,3 @@
--- Retrieve emp_no, first_name, last_name from employees table
-SELECT emp_no, first_name, last_name
-FROM employees;
-
--- Retrieve title, from_date, to_date from Titles table
-SELECT title, from_date, to_date
-FROM titles;
-
 -- Create new table joining employees and titles tables on primary key
 SELECT e.emp_no, e.first_name, e.last_name, t.title, t.from_date, t.to_date
 INTO retirement_titles
